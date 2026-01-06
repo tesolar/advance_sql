@@ -229,60 +229,6 @@ SELECT * FROM vw_attrition_by_department;
 
 ---
 
-## 📚 หัวข้อที่สอน
-
-### ส่วนที่ 1: SQL เบื้องต้น (1 ชม.)
-- ✅ CRUD Operations
-- ✅ Aggregate Functions
-- ✅ GROUP BY, HAVING
-
-### ส่วนที่ 2: JOINs และ Subqueries (1 ชม.)
-- ✅ INNER JOIN, LEFT JOIN, RIGHT JOIN
-- ✅ Multiple Table JOINs (3+ tables)
-- ✅ Self JOIN
-- ✅ Subqueries (WHERE, FROM, SELECT)
-- ✅ Correlated Subqueries
-- ✅ EXISTS, IN
-
-### ส่วนที่ 3: Common Table Expressions (1 ชม.)
-- ✅ WITH Clause (CTE)
-- ✅ Multiple CTEs
-- ✅ Recursive CTEs
-- ✅ CTE vs Subquery
-
-### ส่วนที่ 4-5: Window Functions (2 ชม.)
-- ✅ ROW_NUMBER(), RANK(), DENSE_RANK()
-- ✅ LAG(), LEAD()
-- ✅ FIRST_VALUE(), LAST_VALUE()
-- ✅ NTILE()
-- ✅ Aggregate Window Functions (SUM, AVG OVER)
-- ✅ PARTITION BY
-- ✅ Frame Clauses (ROWS BETWEEN, RANGE BETWEEN)
-
-### ส่วนที่ 6: Advanced Techniques (1 ชม.)
-- ✅ CASE WHEN
-- ✅ COALESCE, NULLIF
-- ✅ UNION, UNION ALL
-- ✅ Performance Tips (INDEX, EXPLAIN)
-
----
-
-## 🎯 แบบฝึกหัด
-
-### แบบฝึกหัดในคลาส (มีเฉลย)
-1. **Department Attrition Analysis** - Multi-table JOIN & Aggregation
-2. **Top 3 Employees by Department** - CTE & Window Functions  
-3. **Attrition Factors Analysis** - Multiple CTEs & Complex Queries
-4. **Salary Movement Analysis** - Window Functions with LAG/LEAD
-
-### การบ้าน (4 ข้อ)
-1. **Employee Risk Scoring** - CASE WHEN และ Conditional Logic
-2. **Department Performance Dashboard** - Comprehensive Analytics
-3. **Salary Cohort Analysis** - NTILE และ Trend Analysis
-4. **Predictive Features Ranking** - Feature Importance Analysis
-
----
-
 ## 💡 Insights จากข้อมูล
 
 ### สถิติทั่วไป:
@@ -306,63 +252,15 @@ SELECT * FROM vw_attrition_by_department;
 |-----------|---------|-------------|
 | PostgreSQL | 14+ | Database Server |
 | PgAdmin 4 | Latest | GUI Tool สำหรับจัดการ PostgreSQL |
-| Python | 3.8+ | ประมวลผลข้อมูล (สำหรับอาจารย์) |
-| Pandas | Latest | Data manipulation (สำหรับอาจารย์) |
-
----
-
-## 📖 วิธีใช้สำหรับอาจารย์
-
-### การเตรียมตัวก่อนสอน:
-1. อ่าน `teaching_guide.md` ทั้งหมด
-2. ทดสอบ run `hr_database_setup.sql`
-3. ทดลองทำทุกแบบฝึกหัดใน `sql_exercises.sql`
-4. เตรียม slides/notes เพิ่มเติมถ้าต้องการ
-
-### ในคลาส:
-1. แจก `hr_database_setup.sql` และ `sql_exercises.sql`
-2. ให้นักศึกษา setup database ก่อน (15 นาที)
-3. สอนตาม schedule ใน `teaching_guide.md`
-4. ใช้ live coding และให้นักศึกษาลองทำตาม
-5. ตรวจสอบความเข้าใจเป็นระยะ
-
-### หลังคลาส:
-1. มอบการบ้าน 4 ข้อ (อยู่ใน `sql_exercises.sql`)
-2. กำหนดส่งภายใน 1 สัปดาห์
-3. เปิดช่องทางให้ปรึกษาได้
-
----
-
-## 🔄 วิธีสร้าง Database ใหม่ (สำหรับอาจารย์)
-
-ถ้าต้องการแก้ไขข้อมูลหรือสร้าง database ใหม่:
-
-```bash
-# 1. แก้ไข HR.csv
-# 2. รัน Python script
-python process_hr_data.py
-
-# Output:
-# - departments.csv
-# - job_roles.csv  
-# - employees.csv
-# - employee_compensation.csv
-# - employee_satisfaction.csv
-# - employee_work_history.csv
-# - hr_database_setup.sql (regenerated)
-```
 
 ---
 
 ## 📚 แหล่งเรียนรู้เพิ่มเติม
 
-### สำหรับนักศึกษา:
 - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
 - [Mode Analytics SQL Tutorial](https://mode.com/sql-tutorial/)
 - [SQLZoo Interactive](https://sqlzoo.net/)
 - [LeetCode Database Problems](https://leetcode.com/problemset/database/)
-
-### สำหรับอาจารย์:
 - [PostgreSQL Docs - Window Functions](https://www.postgresql.org/docs/current/tutorial-window.html)
 - [Use The Index, Luke](https://use-the-index-luke.com/) - Performance
 - [Modern SQL](https://modern-sql.com/) - Best Practices
@@ -400,34 +298,10 @@ A: ตรวจสอบ PostgreSQL user permissions
 
 ---
 
-## 🤝 การสนับสนุน
-
-หากมีคำถามหรือพบปัญหา:
-- ปรึกษาอาจารย์ผู้สอน
-- อ่าน `teaching_guide.md` เพิ่มเติม
-- ดูตัวอย่างและเฉลยใน `sql_exercises.sql`
-
----
-
 ## 📝 License & Credits
 
 - **ข้อมูล**: IBM HR Analytics Employee Attrition & Performance Dataset
-- **สร้างโดย**: Python automation script
 - **วัตถุประสงค์**: การศึกษาเท่านั้น
-
----
-
-## ✨ สรุป
-
-โปรเจคนี้ประกอบด้วย:
-- ✅ Database ที่ออกแบบดี (3NF) พร้อม 6 tables
-- ✅ ข้อมูล 1,470 พนักงานจริง พร้อม insights
-- ✅ แบบฝึกหัด 4 ข้อ + การบ้าน 4 ข้อ
-- ✅ เฉลยทุกข้อพร้อมคำอธิบาย
-- ✅ คู่มือการสอนละเอียด
-- ✅ ครอบคลุม Advanced SQL ทุกหัวข้อสำคัญ
-
-**พร้อมใช้งานทันที โดยไม่ต้องเตรียมข้อมูลเพิ่มเติม! 🎉**
 
 ---
 
