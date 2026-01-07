@@ -5,11 +5,6 @@
 
 # 📋 Course Overview
 
-## What We'll Learn Today
-- ⏱️ **Duration**: 2 Hours
-- 🎯 **Main Focus** (90 min): JOINs, Subqueries & CTEs
-- 🌟 **Bonus** (30 min): Introduction to Window Functions
-
 ## Why This Matters for Data Engineering?
 - 🔄 **ETL/ELT Pipelines**: Transform and combine data from multiple sources
 - 📊 **Data Transformation**: Build clean, maintainable queries
