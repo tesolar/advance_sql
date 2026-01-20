@@ -1,5 +1,4 @@
 # 📊 Advanced SQL for Data Engineering
-## Lecture Slides (2 Hours)
 
 ---
 
@@ -52,11 +51,11 @@ departments (3 departments)
 
 ---
 
-# 📖 MAIN FOCUS (90 min): JOINs, Subqueries & CTEs
+# 📖 MAIN FOCUS: JOINs, Subqueries & CTEs
 
 ---
 
-# 🔍 Setup & Review (10 min)
+# 🔍 Setup & Review
 
 ## Quick Check ✅
 1. Database imported successfully?
@@ -80,7 +79,7 @@ SELECT * FROM employees LIMIT 5;
 
 ---
 
-# 🔗 Multi-table JOINs (20 min)
+# 🔗 Multi-table JOINs
 
 ## Why JOINs in Data Engineering?
 - Combine data from multiple sources
@@ -163,7 +162,7 @@ LIMIT 10;
 
 ---
 
-# 📦 Subqueries (15 min)
+# 📦 Subqueries
 
 ## What are Subqueries?
 - Query inside another query
@@ -242,7 +241,7 @@ Still Working    |     1233       |      6832.74       |         2.78         | 
 
 ---
 
-# 📝 Common Table Expressions (CTEs) (45 min)
+# 📝 Common Table Expressions (CTEs)
 
 ## What are CTEs?
 - **WITH clause** creates temporary named result sets
@@ -418,12 +417,12 @@ SELECT * FROM salary_comparison;
 
 ---
 
-# ⏸️ Main Focus Summary (90 min)
+# ⏸️ Main Focus Summary
 
 ## What We Learned
-✅ **Multi-table JOINs** (20 min): Combine 3+ tables for complete data views
-✅ **Subqueries** (15 min): Nested queries for filtering and calculations  
-✅ **CTEs** (45 min): Industry-standard for readable, maintainable pipelines
+✅ **Multi-table JOINs**: Combine 3+ tables for complete data views
+✅ **Subqueries**: Nested queries for filtering and calculations  
+✅ **CTEs**: Industry-standard for readable, maintainable pipelines
 
 ## 🎯 Critical Takeaways for Data Engineers
 1. **JOINs** = 50% of your daily work - master them!
@@ -441,11 +440,11 @@ SELECT * FROM salary_comparison;
 
 ---
 
-# 🌟 BONUS (30 min): Introduction to Window Functions
+# 🌟 BONUS: Introduction to Window Functions
 
 ---
 
-# 🪟 Window Functions Overview (5 min)
+# 🪟 Window Functions Overview
 
 ## What are Window Functions?
 - Perform calculations **across rows** related to the current row
@@ -460,7 +459,7 @@ SELECT * FROM salary_comparison;
 
 ---
 
-# 🪟 Window Functions vs GROUP BY (5 min)
+# 🪟 Window Functions vs GROUP BY
 
 ### GROUP BY Example
 ```sql
@@ -505,7 +504,7 @@ function_name() OVER (
 
 ---
 
-# 🏆 Ranking Functions - Quick Demo (10 min)
+# 🏆 Ranking Functions - Quick Demo
 
 ## Most Common: ROW_NUMBER()
 
@@ -648,7 +647,7 @@ ORDER BY income_quartile;
 
 ---
 
-# 📊 Aggregate Window Functions - Quick Intro (10 min)
+# 📊 Aggregate Window Functions - Quick Intro
 
 ## Most Useful: AVG() OVER
 
@@ -674,7 +673,7 @@ ORDER BY d.department_name, diff_from_avg DESC;
 
 ---
 
-# 🌟 Window Functions - When to Use? (5 min)
+# 🌟 Window Functions - When to Use?
 
 ## Common Use Cases
 1. **Rankings**: Top N per category (ROW_NUMBER)
@@ -743,7 +742,7 @@ ORDER BY d.department_name, dept_rank;
 
 ---
 
-# 🔍 Integration: CTEs + Window Functions (10 min)
+# 🔍 Integration: CTEs + Window Functions
 
 ## Real-World Data Engineering Example
 
@@ -851,12 +850,12 @@ Low Risk     |      876       |   7456.33  |       3.12       |    8.45    |    
 
 # ✅ What We Learned Today (2 Hours)
 
-## Core Skills (90 min) - Master These! 🎯
-- ✅ **Multi-table JOINs** (20 min): Combine data from multiple sources
-- ✅ **Subqueries** (15 min): Nested queries for complex filtering
-- ✅ **CTEs** (45 min): **Most important!** Readable, maintainable data pipelines
+## Core Skills - Master These! 🎯
+- ✅ **Multi-table JOINs**: Combine data from multiple sources
+- ✅ **Subqueries**: Nested queries for complex filtering
+- ✅ **CTEs**: **Most important!** Readable, maintainable data pipelines
 
-## Bonus Skills (30 min) - Good to Know 🌟
+## Bonus Skills - Good to Know 🌟
 - ✅ **Window Functions Intro**: Rankings, comparisons, running totals
 - ✅ **ROW_NUMBER()**: Top N per group
 - ✅ **AVG() OVER**: Compare to group averages
